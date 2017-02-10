@@ -15,7 +15,7 @@ class GameCell: UICollectionViewCell {
     func congigurateCell( game: Game) {
         if game.gameImage != nil {
             gameImageView.image = game.gameImage
-            gameImageView.layer.cornerRadius = 10
+            gameImageView.layer.cornerRadius = 50
             gameImageView.layer.masksToBounds = true
         }
     }

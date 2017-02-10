@@ -76,7 +76,8 @@
                     <navigationItem key="navigationItem" id="Pc3-fw-q0T"/>
                     <connections>
                         <outlet property="GamesCollectionView" destination="BB6-Zu-eDC" id="aul-ie-d6k"/>
-                        <outlet property="loadingIndiactor" destination="EEv-LJ-j5g" id="GzH-vP-aoQ"/>
+                        <outlet property="loading" destination="BB6-Zu-eDC" id="1TA-87-uMR"/>
+                        <outlet property="loadingIndicator" destination="EEv-LJ-j5g" id="E7c-Mn-gP9"/>
                         <segue destination="3Ib-z6-VKK" kind="show" identifier="streamShowVC" id="pNX-C6-Bav"/>
                     </connections>
                 </viewController>

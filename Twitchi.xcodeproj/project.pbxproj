@@ -17,6 +17,7 @@
 		845B2C831DF24ACE00609FC0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B2C821DF24ACE00609FC0 /* Stream.swift */; };
 		8463CEA01DEE2F890063B28B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463CE9F1DEE2F890063B28B /* Game.swift */; };
 		8463CEA31DEE340A0063B28B /* GameDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463CEA21DEE340A0063B28B /* GameDataServices.swift */; };
+		84D254A81E02B37D00A64D6D /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 84D254A71E02B37D00A64D6D /* Carthage */; };
 		84DED5A71DE617DE0030A2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5A61DE617DE0030A2FB /* AppDelegate.swift */; };
 		84DED5AC1DE617DE0030A2FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DED5AA1DE617DE0030A2FB /* Main.storyboard */; };
 		84DED5AE1DE617DF0030A2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DED5AD1DE617DF0030A2FB /* Assets.xcassets */; };
@@ -128,6 +129,7 @@
 		845B2C821DF24ACE00609FC0 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 		8463CE9F1DEE2F890063B28B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		8463CEA21DEE340A0063B28B /* GameDataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataServices.swift; sourceTree = "<group>"; };
+		84D254A71E02B37D00A64D6D /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Carthage; path = ../../Downloads/VirerTwitch/Carthage; sourceTree = "<group>"; };
 		84DED5A31DE617DE0030A2FB /* Twitchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DED5A61DE617DE0030A2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DED5AB1DE617DE0030A2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				84EEECAE1E047605004CE3D2 /* Alamofire.xcodeproj */,
+				84D254A71E02B37D00A64D6D /* Carthage */,
 				84DED5A51DE617DE0030A2FB /* Twitchi */,
 				84DED5A41DE617DE0030A2FB /* Products */,
 			);
@@ -278,6 +281,7 @@
 				TargetAttributes = {
 					84DED5A21DE617DD0030A2FB = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PX8TS3NF66;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -366,6 +370,7 @@
 				84DED5B11DE617DF0030A2FB /* LaunchScreen.storyboard in Resources */,
 				84DED5AE1DE617DF0030A2FB /* Assets.xcassets in Resources */,
 				84DED5AC1DE617DE0030A2FB /* Main.storyboard in Resources */,
+				84D254A81E02B37D00A64D6D /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -521,7 +526,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PX8TS3NF66;
 				INFOPLIST_FILE = Twitchi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -536,7 +541,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PX8TS3NF66;
 				INFOPLIST_FILE = Twitchi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -556,7 +561,7 @@
 				84DED5B41DE617DF0030A2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		84DED5B51DE617DF0030A2FB /* Build configuration list for PBXNativeTarget "Twitchi" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +570,7 @@
 				84DED5B71DE617DF0030A2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

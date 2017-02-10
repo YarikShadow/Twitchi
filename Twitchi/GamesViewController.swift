@@ -11,7 +11,10 @@ import UIKit
 class GamesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var GamesCollectionView: UICollectionView!
-    @IBOutlet weak var loadingIndiactor: UIActivityIndicatorView!
+    
+    
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loading: UICollectionView!
     
     var refreshContol: UIRefreshControl!
 
@@ -36,11 +39,11 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         GameDataService.instance.downloadTopGames {
             for game in GameDataService.instance.games{
-                game.downloadGameImage {
+                game.downloadGameImage(completed: {
                     self.GamesCollectionView.reloadData()
-                    self.loadingIndiactor.stopAnimating()
-                    self.refreshContol.endRefreshing()
-                }
+                    self.loadingIndicator.stopAnimating()
+                  self.refreshContol.endRefreshing()
+                })
             }
         }
     }
